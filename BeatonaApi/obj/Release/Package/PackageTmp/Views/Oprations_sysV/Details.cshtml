@@ -1,0 +1,99 @@
+﻿@model BeatonaApi.Models.Oprations_sys
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Oprations_sys</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OprationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OprationName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OprationDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OprationDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ControllerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ControllerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TableName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TableName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArabicOprationDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArabicOprationDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IconClass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IconClass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReferenceStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReferenceStatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Opration_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

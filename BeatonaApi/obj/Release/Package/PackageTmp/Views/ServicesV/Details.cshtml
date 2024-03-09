@@ -1,0 +1,67 @@
+﻿@model BeatonaApi.Models.Service
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Service</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceNEN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceNEN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceNAR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceNAR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValueCoint)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValueCoint)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProviderID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProviderID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoriesService.CategorieNEN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoriesService.CategorieNEN)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

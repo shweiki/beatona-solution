@@ -1,0 +1,67 @@
+﻿@model BeatonaApi.Models.Actions_Log
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Actions_Log</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Posting_DateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Posting_DateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description_status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VisitID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VisitID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AspNetUser.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AspNetUser.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Oprations_sys.OprationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Oprations_sys.OprationName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Action_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<BeatonaApi.Models.Actions_Log>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Posting_DateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description_status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VisitID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AspNetUser.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Oprations_sys.OprationName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Posting_DateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.description_status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VisitID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Note)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AspNetUser.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Oprations_sys.OprationName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Action_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Action_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Action_id })
+        </td>
+    </tr>
+}
+
+</table>
